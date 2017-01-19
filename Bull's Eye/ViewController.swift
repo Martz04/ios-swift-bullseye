@@ -9,7 +9,8 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    var currentValue = 50
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -28,6 +29,11 @@ class ViewController: UIViewController {
         
         present(alert, animated: true, completion: nil)
         
+    }
+    
+    @IBAction func sliderMoved(_ slider: UISlider) {
+        currentValue = lrounf(slider.value)
+        print("The value of the slider is now \(slider.value)")
     }
 }
 

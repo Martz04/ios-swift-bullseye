@@ -297,6 +297,7 @@
 				500F78441E2EF40D00FEFEF0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
