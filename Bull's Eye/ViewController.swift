@@ -21,8 +21,30 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        setUIforSlider()
         startNewRound()
         updateLabels()
+    }
+    
+    func setUIforSlider() {
+        let thumbImageNormal = UIImage(named: "SliderThumb-Normal")!
+        let thumbImageHighlighted = UIImage(named: "SliderThumb-Highlighted")!
+        
+        slider.setThumbImage(thumbImageNormal, for: .normal)
+        slider.setThumbImage(thumbImageHighlighted, for: .highlighted)
+        
+        let insets = UIEdgeInsets(top: 0, left: 14, bottom: 0, right: 14)
+        
+        let trackLeftImage = UIImage(named: "SliderTrackLeft")!
+        let trackLeftResizable =
+            trackLeftImage.resizableImage(withCapInsets: insets)
+        
+        let trackRightImage = UIImage(named: "SliderTrackRight")!
+        let trackRightResizable =
+            trackRightImage.resizableImage(withCapInsets: insets)
+        
+        slider.setMaximumTrackImage(trackRightResizable, for: .normal)
+        slider.setMinimumTrackImage(trackLeftResizable, for: .normal)
     }
     
     func startNewRound() {
