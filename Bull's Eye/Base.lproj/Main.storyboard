@@ -96,14 +96,21 @@
                                 <rect key="frame" x="43" y="263" width="71" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Start Over"/>
+                                <connections>
+                                    <action selector="startOver:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1NN-M9-TMw"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="infoLight" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tgl-vr-XYm">
                                 <rect key="frame" x="472" y="267" width="22" height="22"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <segue destination="92o-BH-Jsr" kind="presentation" modalTransitionStyle="flipHorizontal" id="Hh4-f6-cEU"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
+                    <nil key="simulatedStatusBarMetrics"/>
                     <connections>
                         <outlet property="roundLabel" destination="pk5-Rg-Snb" id="w5B-Ep-ek7"/>
                         <outlet property="scoreLabel" destination="5gX-cn-pGK" id="ceO-Zc-stH"/>
@@ -114,6 +121,42 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="35.91549295774648" y="22.5"/>
+        </scene>
+        <!--About View Controller-->
+        <scene sceneID="Jb2-bg-7zc">
+            <objects>
+                <viewController id="92o-BH-Jsr" customClass="AboutViewController" customModule="Bull_s_Eye" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="tAx-IK-1qJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="jSU-0z-SEa"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="h4c-uB-pd6">
+                        <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z9U-Jk-xyu">
+                                <rect key="frame" x="265" y="244" width="39" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Close"/>
+                                <connections>
+                                    <action selector="close:" destination="92o-BH-Jsr" eventType="touchUpInside" id="jzV-17-KM2"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="wqu-aW-eXl">
+                                <rect key="frame" x="20" y="28" width="528" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">*** Bull’s Eye ***Welcome to the awesome game of Bull’s Eye where you can win points andfame by dragging a slider.Your goal is to place the slider as close as possible to the target value. The closer you are, the more points you score. Enjoy!</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aNc-w6-Fpd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="734.15492957746483" y="22.5"/>
         </scene>
     </scenes>
 </document>

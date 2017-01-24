@@ -61,17 +61,27 @@ class ViewController: UIViewController {
         let message = "You score \(points)"
         let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
         
-        let action = UIAlertAction(title: "Awesome", style: .default, handler: nil)
+        let action = UIAlertAction(title: "Awesome", style: .default,
+                                   handler: {
+                                            action in
+                                            self.startNewRound()
+                                            self.updateLabels()
+                                            })
         alert.addAction(action)
         
         present(alert, animated: true, completion: nil)
-        startNewRound()
-        updateLabels()
     }
     
     @IBAction func sliderMoved(_ slider: UISlider) {
         currentValue = lroundf(slider.value)
         print("The value of the slider is now \(slider.value)")
+    }
+    
+    @IBAction func startOver(_ sender: UIButton) {
+        score = 0
+        round = 0
+        startNewRound()
+        updateLabels()
     }
 }
 
