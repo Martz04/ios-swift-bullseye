@@ -11,9 +11,9 @@
 		500F78361E2EF40D00FEFEF0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 500F78351E2EF40D00FEFEF0 /* ViewController.swift */; };
 		500F78391E2EF40D00FEFEF0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 500F78371E2EF40D00FEFEF0 /* Main.storyboard */; };
 		500F783B1E2EF40D00FEFEF0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 500F783A1E2EF40D00FEFEF0 /* Assets.xcassets */; };
-		500F783E1E2EF40D00FEFEF0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 500F783C1E2EF40D00FEFEF0 /* LaunchScreen.storyboard */; };
 		5024E4F41E36E902004D4F4D /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5024E4F31E36E902004D4F4D /* AboutViewController.swift */; };
 		5024E4FC1E36FE0F004D4F4D /* BullsEye.html in Resources */ = {isa = PBXBuildFile; fileRef = 5024E4FB1E36FE0F004D4F4D /* BullsEye.html */; };
+		50D89E2B1E398AE900381EE1 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 50D89E2A1E398AE900381EE1 /* Default-568h@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,10 +22,10 @@
 		500F78351E2EF40D00FEFEF0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		500F78381E2EF40D00FEFEF0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		500F783A1E2EF40D00FEFEF0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		500F783D1E2EF40D00FEFEF0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		500F783F1E2EF40D00FEFEF0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5024E4F31E36E902004D4F4D /* AboutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AboutViewController.swift; path = ../AboutViewController.swift; sourceTree = "<group>"; };
 		5024E4FB1E36FE0F004D4F4D /* BullsEye.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = BullsEye.html; sourceTree = "<group>"; };
+		50D89E2A1E398AE900381EE1 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,13 +58,13 @@
 		500F78321E2EF40D00FEFEF0 /* Bull's Eye */ = {
 			isa = PBXGroup;
 			children = (
+				50D89E2A1E398AE900381EE1 /* Default-568h@2x.png */,
 				5024E4FB1E36FE0F004D4F4D /* BullsEye.html */,
 				5024E4F31E36E902004D4F4D /* AboutViewController.swift */,
 				500F78331E2EF40D00FEFEF0 /* AppDelegate.swift */,
 				500F78351E2EF40D00FEFEF0 /* ViewController.swift */,
 				500F78371E2EF40D00FEFEF0 /* Main.storyboard */,
 				500F783A1E2EF40D00FEFEF0 /* Assets.xcassets */,
-				500F783C1E2EF40D00FEFEF0 /* LaunchScreen.storyboard */,
 				500F783F1E2EF40D00FEFEF0 /* Info.plist */,
 			);
 			path = "Bull's Eye";
@@ -129,8 +129,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				500F783E1E2EF40D00FEFEF0 /* LaunchScreen.storyboard in Resources */,
 				5024E4FC1E36FE0F004D4F4D /* BullsEye.html in Resources */,
+				50D89E2B1E398AE900381EE1 /* Default-568h@2x.png in Resources */,
 				500F783B1E2EF40D00FEFEF0 /* Assets.xcassets in Resources */,
 				500F78391E2EF40D00FEFEF0 /* Main.storyboard in Resources */,
 			);
@@ -158,14 +158,6 @@
 				500F78381E2EF40D00FEFEF0 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		500F783C1E2EF40D00FEFEF0 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				500F783D1E2EF40D00FEFEF0 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
